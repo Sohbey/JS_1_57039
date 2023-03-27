@@ -1,0 +1,28 @@
+<!-- What will be the output in variables a, b & result after execution of
+the following script:
+var a = 2, b = 1;
+var result = --a - --b + ++b + b--;
+Explain the output at each stage:
+--a;
+--a - --b;
+--a - --b + ++b;
+--a - --b + ++b + b--; -->
+
+Result 
+a = 1
+b = 0
+result = 3 
+
+<!-- Here is how the output is calculated at each stage:
+
+--a;  // a becomes 1 (pre-decrement operator decreases a by 1 before returning its value)
+--a - --b;  // a becomes 0, b becomes -1 (pre-decrement operator decreases a and b by 1 before performing subtraction)
+--a - --b + ++b;  // a becomes -1, b becomes 0 (pre-increment operator increases b by 1 before performing addition), result becomes 1
+--a - --b + ++b + b--;  // a becomes -2, b becomes -1 (post-decrement operator decreases b by 1 after performing addition), result becomes 3
+
+So, the final value of a is -2, the final value of b is -1, and the final value of result is 3. -->
+
+
+
+
+
